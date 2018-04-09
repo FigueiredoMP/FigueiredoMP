@@ -1,17 +1,31 @@
 import javax.swing.JOptionPane;
 
 
-public class Exercicio {
+public class compras_matriz {
 
 	public static void main(String[] args) {
 		// aqui defini o nome dos dias da semana
+String produtos [] = new String [10];
+	produtos[0] = "batata";
+	produtos[1] = "alface";
+	produtos[2] = "tomate";
+	produtos[3] = "peixe";
+	produtos[4] = "carne";
+	produtos[5] = "macarrao";
+	produtos[6] = "manjericao";
+	produtos[7] = "cebola";
+	produtos[8] = "alho";
+	produtos[9] = "frango";
+		for(int z=0; z<10; z++) {
+			
+		
 String dias [] = new String [7];
 	dias[0] = "Segunda-Feira";
-	dias[1] = "Terça-Feira";
+	dias[1] = "TerÃ§a-Feira";
 	dias[2] = "Quarta-Feira";
 	dias[3] = "Quinta-Feira";
 	dias[4] = "Sexta-Feira";
-	dias[5] = "Sábado";
+	dias[5] = "SÃ¡bado";
 	dias[6] = "Domingo";
 		for(int x=0; x<7; x++){
 			System.out.println(dias[x]+": " +"\t");
@@ -30,19 +44,20 @@ String semana[][] = new String [1][1];
 								System.out.println("sem compras");
 								break;
 							}
-							if(semana[i][j] == produto) {
+							if(semana[i][j] == produtos[z]){
 								System.out.println(semana[i][j]+"\t");
-							}
-							if(semana[i][j] != produto) {
+							}else if(semana[i][j] != produtos[z]) {
 								System.out.println("repetido");
+							{
+								
 				}
+				}
+				System.out.println("----------");
 			}
-			System.out.println("");
-		}
 		}
 		
 	}
 }
 }
-
-
+}
+}
